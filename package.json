@@ -1,0 +1,12 @@
+{
+  "name": "mandlebrot-set",
+  "version": "0.0.0",
+  "description": "Vanilla JS and HTML",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mandlebrot, set, javascript, html, vanilla, github, gh-pages, github-page, fractal, art"],
+  "author": "E.M. Greeff <emgreeff@datadrivendashboards.com>",
+  "license": "MIT"
+}
