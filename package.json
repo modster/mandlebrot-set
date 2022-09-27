@@ -4,9 +4,14 @@
   "description": "Vanilla JS and HTML",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server"
   },
-  "keywords": ["mandlebrot, set, javascript, html, vanilla, github, gh-pages, github-page, fractal, art"],
+  "keywords": [
+    "mandlebrot, set, javascript, html, vanilla, github, gh-pages, github-page, fractal, art"
+  ],
   "author": "E.M. Greeff <emgreeff@datadrivendashboards.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
 }

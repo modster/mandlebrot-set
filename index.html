@@ -5,15 +5,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>THE MANDLEBROT SET</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
 
-    <canvas id="canvas1"></canvas>
+    <canvas id="canvas1" width="1000px" height="1000px"></canvas>
 
-    <script type="text/javascript">
+    <script>
+        ctx = document.getElementById("canvas1").getContext("2d")
 
+        atom = function (x, y, c) { ctx.fillStyle = c; ctx.fillRect(x, y, 3, 3) }
 
+        for (y = 1; y < 1000; y++) {
+
+            for (x = 1; x < 1000; x++) {
+
+                dx = (x - 500) / 2000 - 0.12
+                dy = (y - 500) / 2000 - 0.82
+                a = dx
+                b = dy
+
+                for (t = 1; t < 200; t++) {
+
+                    d = (a * a) - (b * b) + dx
+                    b = 2 * (a * b) + dy
+                    a = d
+                    H = d > 200
+
+                    if (H) { atom(x, y, "rgb(" + t * 3 + "," + t + "," + t * 0.5 + ")"); break }
+
+                }
+            }
+        }
+
+    </script>
 
 
     </script>
